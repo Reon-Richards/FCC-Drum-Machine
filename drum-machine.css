@@ -1,0 +1,53 @@
+.container{
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 30px;
+  background: lightgrey;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#display{
+  background:green;
+  height: 50px;
+  margin: auto;
+  width:180px;
+  text-align:center;
+  padding-top:0.5em;
+  
+}
+
+.drum-pad{
+  height: 80px;
+  margin: 10px 1em;
+  flex: 0 1 28%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: rgb(112, 75, 112);
+  text-align:center;
+  padding-top:2em;
+  pointer-events: painted;
+ 
+}
+
+.drum-pad:hover{
+  background-color:purple;
+  border-style: outset;
+} 
+
+#drum-container{
+  margin: auto;
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 8px;
+  }
+  .drum-pad {
+    flex: 0 1 23%;
+  }
+  #display{
+  margin-left: 30%;
+}
+}
